@@ -1,0 +1,39 @@
+.contacts {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.locationDescription {
+  padding: 10px 0;
+}
+
+iframe {
+  border-radius: 5%;
+}
+
+.contactForm {
+  margin-top: 25px;
+}
+
+.field {
+  width: 100%;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  max-width: 580px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.submit {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

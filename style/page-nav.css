@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+}
+
+.navItem {
+  padding: 0 5px;
+}
+
+.navLink, .textLink {
+  color: #77e2f5;
+}
+
+article {
+  margin-top: 15px;
+}
+
+.textTitle {
+  margin-bottom: 5px;
+}
+
+.textDescription {
+  text-align: justify
+}

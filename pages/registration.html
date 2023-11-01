@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/style.css">
+  <title>Реєстрація</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="header-title">Реєстрація</h1>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-list-item">
+            <a class="header-list-link" href="../index.html">Головна</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="articles.html">Статті</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="contacts.html">Контакти</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="gallery.html">Галерея</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="page-nav.html">Навігація</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link active" href="">Реєстрація</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-form">
+      <h2 class="contact-form-title">Загальні дані</h2>
+      <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+        <fieldset>
+          <input class="field" id="name" name="name" placeholder="Ім'я" type="text" required>
+          <input class="field" id="surname" name="surname" placeholder="Прізвище" type="text" required>
+          <input class="field" id="email" name="email" placeholder="E-mail" type="email" required>
+          <input class="field" id="password" name="password" placeholder="Пароль" type="password" required>
+          <input class="field" id="website" name="website" placeholder="Сайт" value="https://mysite.name" type="url" required>
+        </fieldset>
+
+        <div class="img-select-wrapper">
+          <fieldset class="fieldset-image">
+            <label class="img-select contact-form-title" for="image">Обрати фото</label>
+            <input class="field" id="image" name="image" accept="image/*" type="file" required>
+          </fieldset>
+
+          <fieldset class="fieldset-birthday">
+            <h2 class="contact-form-title">День народження</h2>
+            <input class="field" id="birthday" name="birthday" type="date" required>
+          </fieldset>
+        </div>
+
+
+        <fieldset>
+          <h2 class="contact-form-title">Оберіть вашу стать</h2>
+          <div class="gender">
+            <div class="gender-select-wrapper">
+              <input class="field gender-select" id="genderMale" name="gender" type="radio" value="Чоловік" checked>
+              <label class="label-gender" for="genderMale">Чоловік</label>
+            </div>
+
+            <div class="gender-select-wrapper">
+              <input class="field gender-select" id="genderFemale" name="gender" type="radio" value="Жінка">
+              <label class="label-gender" for="genderFemale">Жінка</label>
+            </div>
+
+            <div class="gender-select-wrapper">
+              <input class="field gender-select" id="genderCisgander" name="gender" type="radio" value="Цисгендер">
+              <label class="label-gender" for="genderCisgander">Цисгендер</label>
+            </div>
+
+            <div class="gender-select-wrapper">
+              <input class="field gender-select" id="genderTransgender" name="gender" type="radio" value="Трансгендер">
+              <label class="label-gender" for="genderTransgender">Трансгендер</label>
+            </div>
+
+            <div class="gender-select-wrapper">
+              <input class="field gender-select" id="genderAgender" name="gender" type="radio" value="Агендер">
+              <label class="label-gender" for="genderAgender">Агендер</label>
+            </div>
+
+            <div class="gender-select-wrapper">
+              <input class="field gender-select" id="genderNobinary" name="gender" type="radio" value="Небінарний">
+              <label class="label-gender" for="genderNobinary">Небінарний</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <h2 class="contact-form-title">Улюблена кухня (вибір без вибору)</h2>
+          <div class="kitchen">
+            <div class="kitchen-select-wrapper">
+              <input class="field kitchen-select" checked id="ukrainian" name="kitchen" type="checkbox" value="ukrainian" required>
+              <label class="label-kitchen" for="ukrainian">Українська</label>
+            </div>
+
+            <div class="kitchen-select-wrapper">
+              <input class="field kitchen-select" id="middle-ukrainian" name="kitchen" type="checkbox" value="middle-ukrainian">
+              <label class="label-kitchen" for="middle-ukrainian">Центральна</label>
+            </div>
+
+            <div class="kitchen-select-wrapper">
+              <input class="field kitchen-select" id="west-ukrainian" name="kitchen" type="checkbox" value="west-ukrainian">
+              <label class="label-kitchen" for="west-ukrainian">Західна</label>
+            </div>
+
+            <div class="kitchen-select-wrapper">
+              <input class="field kitchen-select" id="east-ukrainian" name="kitchen" type="checkbox" value="east-ukrainian">
+              <label class="label-kitchen" for="east-ukrainian">Східна</label>
+            </div>
+
+            <div class="kitchen-select-wrapper">
+              <input class="field kitchen-select" id="south-ukrainian" name="kitchen" type="checkbox" value="south-ukrainian">
+              <label class="label-kitchen" for="south-ukrainian">Південна</label>
+            </div>
+
+            <div class="kitchen-select-wrapper">
+              <input class="field kitchen-select" id="north-ukrainian" name="kitchen" type="checkbox" value="north-ukrainian">
+              <label class="label-kitchen" for="north-ukrainian">Північна</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <textarea class="field" cols="40" id="question" name="question" placeholder="Про себе" rows="7" required></textarea>
+          <input class="submit" id="submit" type="submit" value="Зареєструватись">
+          <input class="reset" id="reset" type="reset" value="Скинути">
+        </fieldset>
+      </form>
+    </section>
+
+    <footer>
+      <p class="footer-caption">&copy; Student Ihor</p>
+    </footer>
+  </div>
+</body>
+</html>

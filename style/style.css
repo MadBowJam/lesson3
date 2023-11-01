@@ -1,0 +1,285 @@
+@font-face {
+  font-family: RobotoFlex;
+  src: url(../assets/font/RobotoFlex.ttf);
+}
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, em, img, sub, sup, b, u, i, center, ol, ul, li, fieldset, form, label, legend, table, article, figure, figcaption, footer, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  text-decoration: none;
+}
+ol, ul {
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
+body {
+  background: url(../assets/img/nature.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+body::before {
+  content: "";
+  background: url(../assets/img/pig.png) no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+}
+.container {
+  width: 100vw;
+  max-width: 1280px;
+  min-width: 380px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "RobotoFlex";
+  color: #fff;
+}
+.header-title.gallery {
+  color: black;
+}
+.header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.header-list-item {
+  padding: 0 5px;
+  /* background-color: #10da09; */
+}
+.header-list-link {
+  color: #ff00bf;
+  transition: all 1s;
+}
+.header-list-link.active {
+  color: #ff0000;
+  font-weight: 900;
+}
+.header-list-link:hover {
+  color: #ea00ff;
+  font-weight: 900;
+  font-size: large;
+  padding: 0 15px;
+}
+.article-title {
+  margin-bottom: 10px;
+  font-family: arial;
+  border-bottom: 1px solid black;
+}
+.article-description {
+  text-align: justify;
+  background-color: aqua;
+  padding: 10px;
+}
+.article-link {
+  color: rgb(196, 195, 101);
+  transition: all 1s;
+}
+.article-link.read-more {
+  text-decoration: underline;
+}
+.article-link.read-more:hover {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+.article-link.comment {
+  text-align: left;
+  color: rgb(0, 183, 255);
+  display: block;
+}
+.article-description::first-letter {
+  font-family: arial;
+  font-size: 1.5rem;
+  color: red;
+}
+.comments {
+  margin-top: 25px;
+}
+.comments-list, .comments-item {
+  margin-top: 10px;
+}
+.comments-item {
+  text-align: justify;
+}
+.catalog {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.catalog-list {
+  background-color: red;
+}
+.catalog-item {
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+.catalog-item::before, .catalog-title-inner::before {
+  content: "";
+  background: url(../assets/img/globe.png) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.catalog-title-inner::before {
+  background: url(../assets/img/worldwide.png) no-repeat;
+  background-size: contain;
+}
+.catalog-title {
+  color: #833939;
+  display: inline-block;
+}
+.catalog-list-inner {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+}
+.catalog-item-inner {
+  padding: 5px;
+  font-size: 1rem;
+}
+.catalog-title-inner {
+  color: #faa0a0;
+  display: inline-block;
+}
+.catalog-item-inner:nth-of-type(odd):after {
+  content: "new";
+  background-color: black;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  color: #a204fd;
+}
+.gallety-img {
+  width: 300px;
+  height: 300px;
+}
+.body {
+  background: url(../assets/img/wood-pattern.png);
+}
+figure {
+  border: 1px solid black;
+  margin: 0 5px;
+  padding: 5px;
+}
+figure:hover {
+  border: unset;
+  padding: 6px;
+}
+.contacts, .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.location-description {
+  padding: 10px 0;
+}
+iframe {
+  border-radius: 5%;
+  height: 300px;
+}
+.contact-form {
+  margin-top: 25px;
+}
+.field {
+  width: 100%;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  max-width: 580px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+.contact-form-title {
+  margin: 5px 0 10px;
+}
+#image {
+  width: 180px;
+  text-align: center;
+  border: 1px solid;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border: unset;
+}
+#birthday {
+  width: 90%;
+}
+.img-select {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.gender, .kitchen {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.field.gender-select, .field.kitchen-select {
+  margin: unset;
+}
+.label-kitchen {
+  display: flex;
+  align-items: center;
+}
+.submit, .reset {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#name, #surname {
+  text-transform: capitalize;
+}
+.img-select-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+input, label {
+  cursor: pointer;
+}
+.gender-select-wrapper, .kitchen-select-wrapper {
+  padding: 5px;
+}
+.gender-select-wrapper:hover, .kitchen-select-wrapper:hover {
+  border: 1px dashed black;
+  padding: 4px;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+.nav-item {
+  padding: 0 5px;
+}
+.nav-link, .text-link {
+  color: #77e2f5;
+}
+article {
+  margin-top: 15px;
+}
+.text-title {
+  margin-bottom: 5px;
+}
+.text-description {
+  text-align: justify
+}
+footer {
+  margin-top: 20px;
+}

@@ -1,0 +1,25 @@
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+section {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.articleDescription {
+  text-align: justify;
+}
+
+.comments {
+  margin-top: 25px;
+}
+
+.commentsList, .commentsItem {
+  margin-top: 10px;
+}
+
+.commentsItem {
+  text-align: justify;
+}

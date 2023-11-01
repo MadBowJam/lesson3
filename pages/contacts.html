@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/style.css">
+  <title>Контакти</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="header-title">Контакти</h1>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-list-item">
+            <a class="header-list-link" href="../index.html">Головна</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="articles.html">Статті</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link active" href="">Контакти</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="gallery.html">Галерея</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="page-nav.html">Навігація</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-link" href="registration.html">Реєстрація</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contacts">
+      <section class="location">
+        <h2 class="location-title">Адреса</h2>
+        <p class="location-description">м. Київ, вулиця Олександра Мишуги 4 (ТРЦ Піраміда), 2 поверх, офіс 202, 02141</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7769.246443395679!2d30.632721319077937!3d50.39950041113364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c4527c042015%3A0xddc6bd7ef0cb9e90!2z0KLQoNCmIFBpcmFtaWRh!5e0!3m2!1suk!2sua!4v1698176061712!5m2!1suk!2sua"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+
+      <section class="contact-form">
+        <h2 class="contact-form-title">Звяжіться з нами</h2>
+        <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+          <fieldset>
+            <input class="field" autofocus id="name" name="name" placeholder="Введіть ім'я" type="text">
+            <input class="field" id="phone" name="phone" placeholder="Ваш номер телефону" type="tel">
+            <input class="field" id="email" name="email" placeholder="Ваш e-mail" type="email">
+            <textarea class="field" cols="40" id="txt" name="question" placeholder="Задайте нам своє питання" rows="7"></textarea>
+            <input class="submit" id="submit" type="submit" value="Відправити">
+          </fieldset>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <p class="footer-caption">&copy; Student Ihor</p>
+    </footer>
+
+    <script src="../script/contacts.js"></script>
+  </div>
+</body>
+</html>

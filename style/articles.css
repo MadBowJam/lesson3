@@ -1,0 +1,25 @@
+article {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.articleTitle {
+  margin-bottom: 10px;
+}
+
+.articleDescription {
+  text-align: justify;
+}
+
+.articleLink {
+  color: rgb(196, 195, 101);
+}
+
+.articleLink.comment {
+  text-align: left;
+  display: block;
+}
+
+hr {
+  width: 600px;
+}
