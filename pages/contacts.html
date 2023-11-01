@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/components/reset.css">
   <link rel="stylesheet" href="../style/style.css">
   <title>Контакти</title>
 </head>
@@ -53,20 +54,34 @@
         <h2 class="contact-form-title">Звяжіться з нами</h2>
         <form action="https://tests.fomenko.top/echo/index.php" method="GET">
           <fieldset>
-            <input class="field" autofocus id="name" name="name" placeholder="Введіть ім'я" type="text">
-            <input class="field" id="phone" name="phone" placeholder="Ваш номер телефону" type="tel">
-            <input class="field" id="email" name="email" placeholder="Ваш e-mail" type="email">
-            <textarea class="field" cols="40" id="txt" name="question" placeholder="Задайте нам своє питання" rows="7"></textarea>
+            <div class="contact-select-wrapper">
+              <label class="label-contact" for="name">Ім'я</label>
+              <input class="field" autofocus id="name" name="name" placeholder="Введіть ім'я" type="text">
+            </div>
+
+            <div class="contact-select-wrapper">
+              <label class="label-contact" for="phone">Телефон</label>
+              <input class="field" id="phone" name="phone" placeholder="Ваш номер телефону" type="tel">
+            </div>
+            <div class="contact-select-wrapper">
+              <label class="label-contact" for="email">E-mail</label>
+              <input class="field" id="email" name="email" placeholder="Ваш e-mail" type="email">
+            </div>
+
+            <div class="contact-select-wrapper"></div>
+              <label class="label-contact" for="txt">Ваше питання</label>
+              <textarea class="field" cols="40" id="txt" name="question" placeholder="Задайте нам своє питання" rows="7"></textarea>
+            </div>
+
             <input class="submit" id="submit" type="submit" value="Відправити">
           </fieldset>
         </form>
       </section>
+
+      <footer>
+        <p class="footer-caption">&copy; Student Ihor</p>
+      </footer>
     </div>
-
-    <footer>
-      <p class="footer-caption">&copy; Student Ihor</p>
-    </footer>
-
     <script src="../script/contacts.js"></script>
   </div>
 </body>

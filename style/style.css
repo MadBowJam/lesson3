@@ -2,15 +2,6 @@
   font-family: RobotoFlex;
   src: url(../assets/font/RobotoFlex.ttf);
 }
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, em, img, sub, sup, b, u, i, center, ol, ul, li, fieldset, form, label, legend, table, article, figure, figcaption, footer, header, nav {
-	margin: 0;
-	padding: 0;
-	border: 0;
-  text-decoration: none;
-}
-ol, ul {
-  list-style: none;
-}
 html {
   scroll-behavior: smooth;
   font-size: 14px;
@@ -20,8 +11,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   position: relative;
-  width: 100vw;
-  height: 100vh;
 }
 body::before {
   content: "";
@@ -33,7 +22,6 @@ body::before {
   right: 0;
 }
 .container {
-  width: 100vw;
   max-width: 1280px;
   min-width: 380px;
   padding: 20px;
@@ -131,6 +119,7 @@ body::before {
 .catalog-title-inner::before {
   background: url(../assets/img/worldwide.png) no-repeat;
   background-size: contain;
+  margin-right: 10px;
 }
 .catalog-title {
   color: #833939;
@@ -152,6 +141,7 @@ body::before {
 .catalog-item-inner:nth-of-type(odd):after {
   content: "new";
   background-color: black;
+  padding: 3px;
 }
 .gallery {
   display: flex;
@@ -190,7 +180,7 @@ iframe {
 }
 .field {
   width: 100%;
-  margin: 10px 0 0 0;
+  margin: 10px 0;
   padding: 10px;
   max-width: 580px;
   border: none;
@@ -203,7 +193,7 @@ textarea {
 .contact-form-title {
   margin: 5px 0 10px;
 }
-#image {
+.image {
   width: 180px;
   text-align: center;
   border: 1px solid;
@@ -212,10 +202,10 @@ textarea {
   background-color: white;
   border: unset;
 }
-#birthday {
+.birthday {
   width: 90%;
 }
-.img-select {
+.img-select, .birthday-select, .contact-select-wrapper {
   display: block;
   width: 100%;
   font-size: 1.5rem;
@@ -244,7 +234,7 @@ textarea {
   outline: none;
   cursor: pointer;
 }
-#name, #surname {
+.name, .surname {
   text-transform: capitalize;
 }
 .img-select-wrapper {

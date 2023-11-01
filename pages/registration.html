@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/components/reset.css">
   <link rel="stylesheet" href="../style/style.css">
   <title>Реєстрація</title>
 </head>
@@ -43,22 +44,41 @@
       <h2 class="contact-form-title">Загальні дані</h2>
       <form action="https://tests.fomenko.top/echo/index.php" method="GET">
         <fieldset>
-          <input class="field" id="name" name="name" placeholder="Ім'я" type="text" required>
-          <input class="field" id="surname" name="surname" placeholder="Прізвище" type="text" required>
-          <input class="field" id="email" name="email" placeholder="E-mail" type="email" required>
-          <input class="field" id="password" name="password" placeholder="Пароль" type="password" required>
-          <input class="field" id="website" name="website" placeholder="Сайт" value="https://mysite.name" type="url" required>
+          <div class="contact-select-wrapper">
+            <label class="label-contact" for="name">Ім'я</label>
+            <input class="field name" id="name" name="name" placeholder="Ім'я" type="text" required>
+          </div>
+
+          <div class="contact-select-wrapper">
+            <label class="label-contact" for="surname">Прізвище</label>
+            <input class="field surname" id="surname" name="surname" placeholder="Прізвище" type="text" required>
+          </div>
+
+          <div class="contact-select-wrapper">
+            <label class="label-contact" for="email">E-mail</label>
+            <input class="field" id="email" name="email" placeholder="E-mail" type="email" required>
+          </div>
+
+          <div class="contact-select-wrapper">
+            <label class="label-contact" for="password">Пароль</label>
+            <input class="field" id="password" name="password" placeholder="Пароль" type="password" required>
+          </div>
+
+          <div class="contact-select-wrapper">
+            <label class="label-contact" for="website">Сайт</label>
+            <input class="field" id="website" name="website" placeholder="Сайт" value="https://mysite.name" type="url" required>
+          </div>
         </fieldset>
 
         <div class="img-select-wrapper">
           <fieldset class="fieldset-image">
             <label class="img-select contact-form-title" for="image">Обрати фото</label>
-            <input class="field" id="image" name="image" accept="image/*" type="file" required>
+            <input class="field image" id="image" name="image" accept="image/*" type="file" required>
           </fieldset>
 
           <fieldset class="fieldset-birthday">
-            <h2 class="contact-form-title">День народження</h2>
-            <input class="field" id="birthday" name="birthday" type="date" required>
+            <label class="birthday-select contact-form-title">День народження</label>
+            <input class="field birthday" id="birthday" name="birthday" type="date" required>
           </fieldset>
         </div>
 
@@ -134,7 +154,11 @@
         </fieldset>
 
         <fieldset>
-          <textarea class="field" cols="40" id="question" name="question" placeholder="Про себе" rows="7" required></textarea>
+          <div class="kitchen-select-wrapper">
+            <label class="label-question" for="question">Про себе</label>
+            <textarea class="field" cols="40" id="question" name="question" placeholder="Про себе" rows="7" required></textarea>
+          </div>
+
           <input class="submit" id="submit" type="submit" value="Зареєструватись">
           <input class="reset" id="reset" type="reset" value="Скинути">
         </fieldset>
